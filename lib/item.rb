@@ -6,6 +6,4 @@ class Item
     @name = name
     @bids = {}
   end
-
-  
 end
