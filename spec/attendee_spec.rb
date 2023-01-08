@@ -3,8 +3,8 @@ require './lib/item'
 
 RSpec.describe do 
 
-  let(:attendee) { Attendee.new('Megan', '$50') }
-  
+  let(:attendee) { Attendee.new(name: 'Megan', budget: '$50') }
+
   describe '#initialization' do 
     it 'exists' do 
       expect(attendee).to be_a(Attendee)
