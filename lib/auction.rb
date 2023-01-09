@@ -42,5 +42,20 @@ class Auction
     highest_bidders.uniq
   end
 
-  
+  def bidder_info
+    bidder_info_hash = Hash.new 
+    @items.each do |item|
+      item.bids.each do |attendee, bid_amount|
+        bidder_info_hash[attendee] = {}
+      end
+      bidder_info_hash.keys.each do |attendee_key|
+        bidder_info_hash[attendee] 
+        require 'pry'; binding.pry
+        end
+      end
+    end
+    
+
+  end
+
 end
